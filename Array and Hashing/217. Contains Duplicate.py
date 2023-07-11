@@ -8,12 +8,12 @@ class Solution:
 		hashset = set()
 
 		for number in nums:
+			# Duplicate found
 			if number in hashset:
-				# Duplicate found
 				return True
-
 			# add the unique number to hashset
-			hashset.add(number)
+			else:
+				hashset.add(number)
 		
 		# No duplicates found
 		return False
